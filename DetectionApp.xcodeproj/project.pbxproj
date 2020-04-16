@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C1BA91E2241068900183C77 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1BA91D2241068900183C77 /* CameraViewController.swift */; };
+		2C65C11C2243EFEF00E290B5 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C65C11B2243EFEF00E290B5 /* UIImage+Color.m */; };
+		2C6A34F2224CD21900E53B8F /* ObjectDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A34F1224CD21900E53B8F /* ObjectDetector.mm */; };
+		602CE77E2333846300C39930 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602CE77C2333846300C39930 /* ColorCollectionViewCell.swift */; };
+		602CE77F2333846300C39930 /* ColorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 602CE77D2333846300C39930 /* ColorCollectionViewCell.xib */; };
+		6044086C2214223500099F92 /* BodyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6044086B2214223500099F92 /* BodyObject.m */; };
+		6044086D22145E7600099F92 /* Pods_DetectionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8125D287D466B69D1E09CA /* Pods_DetectionApp.framework */; };
+		60717F2021F72FC500B9B3FE /* haarcascade_lefteye_2splits.xml in Resources */ = {isa = PBXBuildFile; fileRef = 60717F0F21F72FC400B9B3FE /* haarcascade_lefteye_2splits.xml */; };
+		60717F2121F72FC500B9B3FE /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 60717F1021F72FC400B9B3FE /* haarcascade_frontalface_alt.xml */; };
+		60717F2221F72FC500B9B3FE /* haarcascade_licence_plate_rus_16stages.xml in Resources */ = {isa = PBXBuildFile; fileRef = 60717F1121F72FC400B9B3FE /* haarcascade_licence_plate_rus_16stages.xml */; };
+		60717F2321F72FC500B9B3FE /* haarcascade_lowerbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 60717F1221F72FC400B9B3FE /* haarcascade_lowerbody.xml */; };
+		60717F2421F72FC500B9B3FE /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 60717F1321F72FC400B9B3FE /* haarcascade_frontalface_alt2.xml */; };
+		60717F2521F72FC500B9B3FE /* haarcascade_smile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 60717F1421F72FC400B9B3FE /* haarcascade_smile.xml */; };
+		60717F2621F72FC500B9B3FE /* haarcascade_righteye_2splits.xml in Resources */ = {isa = PBXBuildFile; fileRef = 60717F1521F72FC500B9B3FE /* haarcascade_righteye_2splits.xml */; };
+		60717F2721F72FC500B9B3FE /* haarcascade_russian_plate_number.xml in Resources */ = {isa = PBXBuildFile; fileRef = 60717F1621F72FC500B9B3FE /* haarcascade_russian_plate_number.xml */; };
+		60717F2821F72FC500B9B3FE /* haarcascade_fullbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 60717F1721F72FC500B9B3FE /* haarcascade_fullbody.xml */; };
+		60717F2921F72FC500B9B3FE /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = 60717F1821F72FC500B9B3FE /* haarcascade_frontalface_default.xml */; };
+		60717F2A21F72FC500B9B3FE /* haarcascade_frontalcatface_extended.xml in Resources */ = {isa = PBXBuildFile; fileRef = 60717F1921F72FC500B9B3FE /* haarcascade_frontalcatface_extended.xml */; };
+		60717F2B21F72FC500B9B3FE /* haarcascade_frontalface_alt_tree.xml in Resources */ = {isa = PBXBuildFile; fileRef = 60717F1A21F72FC500B9B3FE /* haarcascade_frontalface_alt_tree.xml */; };
+		60717F2C21F72FC500B9B3FE /* haarcascade_eye_tree_eyeglasses.xml in Resources */ = {isa = PBXBuildFile; fileRef = 60717F1B21F72FC500B9B3FE /* haarcascade_eye_tree_eyeglasses.xml */; };
+		60717F2D21F72FC500B9B3FE /* haarcascade_profileface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 60717F1C21F72FC500B9B3FE /* haarcascade_profileface.xml */; };
+		60717F2E21F72FC500B9B3FE /* haarcascade_frontalcatface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 60717F1D21F72FC500B9B3FE /* haarcascade_frontalcatface.xml */; };
+		60717F2F21F72FC500B9B3FE /* haarcascade_upperbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 60717F1E21F72FC500B9B3FE /* haarcascade_upperbody.xml */; };
+		60717F3021F72FC500B9B3FE /* haarcascade_eye.xml in Resources */ = {isa = PBXBuildFile; fileRef = 60717F1F21F72FC500B9B3FE /* haarcascade_eye.xml */; };
+		608B481A21EF523A00D165CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608B481921EF523A00D165CB /* AppDelegate.swift */; };
+		608B481F21EF523A00D165CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608B481D21EF523A00D165CB /* Main.storyboard */; };
+		608B482121EF523B00D165CB /* Asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608B482021EF523B00D165CB /* Asset.xcassets */; };
+		608B482421EF523B00D165CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608B482221EF523B00D165CB /* LaunchScreen.storyboard */; };
+		608B483D21EF557600D165CB /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 608B483B21EF557600D165CB /* UIImage+OpenCV.mm */; };
+		608B484021EF55A500D165CB /* OpenCVDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 608B483E21EF55A500D165CB /* OpenCVDetector.mm */; };
+		60B1321B21F0E5FA00F99AB8 /* BodyDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60B1321A21F0E5FA00F99AB8 /* BodyDetector.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C1BA91D2241068900183C77 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		2C65C11A2243EFEF00E290B5 /* UIImage+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		2C65C11B2243EFEF00E290B5 /* UIImage+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		2C6A34F0224CD21900E53B8F /* ObjectDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectDetector.h; sourceTree = "<group>"; };
+		2C6A34F1224CD21900E53B8F /* ObjectDetector.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjectDetector.mm; sourceTree = "<group>"; };
+		4AAC03BAE3450A0ECD6A6E94 /* Pods-DetectionApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetectionApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DetectionApp/Pods-DetectionApp.debug.xcconfig"; sourceTree = "<group>"; };
+		602CE77C2333846300C39930 /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
+		602CE77D2333846300C39930 /* ColorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorCollectionViewCell.xib; sourceTree = "<group>"; };
+		6044086A2214223500099F92 /* BodyObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BodyObject.h; sourceTree = "<group>"; };
+		6044086B2214223500099F92 /* BodyObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BodyObject.m; sourceTree = "<group>"; };
+		60717F0F21F72FC400B9B3FE /* haarcascade_lefteye_2splits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_lefteye_2splits.xml; sourceTree = "<group>"; };
+		60717F1021F72FC400B9B3FE /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
+		60717F1121F72FC400B9B3FE /* haarcascade_licence_plate_rus_16stages.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_licence_plate_rus_16stages.xml; sourceTree = "<group>"; };
+		60717F1221F72FC400B9B3FE /* haarcascade_lowerbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_lowerbody.xml; sourceTree = "<group>"; };
+		60717F1321F72FC400B9B3FE /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		60717F1421F72FC400B9B3FE /* haarcascade_smile.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_smile.xml; sourceTree = "<group>"; };
+		60717F1521F72FC500B9B3FE /* haarcascade_righteye_2splits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_righteye_2splits.xml; sourceTree = "<group>"; };
+		60717F1621F72FC500B9B3FE /* haarcascade_russian_plate_number.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_russian_plate_number.xml; sourceTree = "<group>"; };
+		60717F1721F72FC500B9B3FE /* haarcascade_fullbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_fullbody.xml; sourceTree = "<group>"; };
+		60717F1821F72FC500B9B3FE /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
+		60717F1921F72FC500B9B3FE /* haarcascade_frontalcatface_extended.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalcatface_extended.xml; sourceTree = "<group>"; };
+		60717F1A21F72FC500B9B3FE /* haarcascade_frontalface_alt_tree.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt_tree.xml; sourceTree = "<group>"; };
+		60717F1B21F72FC500B9B3FE /* haarcascade_eye_tree_eyeglasses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye_tree_eyeglasses.xml; sourceTree = "<group>"; };
+		60717F1C21F72FC500B9B3FE /* haarcascade_profileface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_profileface.xml; sourceTree = "<group>"; };
+		60717F1D21F72FC500B9B3FE /* haarcascade_frontalcatface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalcatface.xml; sourceTree = "<group>"; };
+		60717F1E21F72FC500B9B3FE /* haarcascade_upperbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_upperbody.xml; sourceTree = "<group>"; };
+		60717F1F21F72FC500B9B3FE /* haarcascade_eye.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye.xml; sourceTree = "<group>"; };
+		608B481621EF523A00D165CB /* DetectionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DetectionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		608B481921EF523A00D165CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		608B481E21EF523A00D165CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		608B482021EF523B00D165CB /* Asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Asset.xcassets; sourceTree = "<group>"; };
+		608B482321EF523B00D165CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		608B482521EF523B00D165CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		608B482E21EF527800D165CB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		608B482F21EF530A00D165CB /* DetectionApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DetectionApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		608B483B21EF557600D165CB /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
+		608B483C21EF557600D165CB /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		608B483E21EF55A500D165CB /* OpenCVDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVDetector.mm; sourceTree = "<group>"; };
+		608B483F21EF55A500D165CB /* OpenCVDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVDetector.h; sourceTree = "<group>"; };
+		60B1321921F0E5FA00F99AB8 /* BodyDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BodyDetector.h; sourceTree = "<group>"; };
+		60B1321A21F0E5FA00F99AB8 /* BodyDetector.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BodyDetector.mm; sourceTree = "<group>"; };
+		B41677230514792ADD42395E /* Pods-DetectionApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetectionApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DetectionApp/Pods-DetectionApp.release.xcconfig"; sourceTree = "<group>"; };
+		FC8125D287D466B69D1E09CA /* Pods_DetectionApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DetectionApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		608B481321EF523A00D165CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6044086D22145E7600099F92 /* Pods_DetectionApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C5E10C5225B84420088FC4A /* CollectioViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				602CE77C2333846300C39930 /* ColorCollectionViewCell.swift */,
+				602CE77D2333846300C39930 /* ColorCollectionViewCell.xib */,
+			);
+			path = CollectioViewCells;
+			sourceTree = "<group>";
+		};
+		60717EF921F7227800B9B3FE /* Haarcascades */ = {
+			isa = PBXGroup;
+			children = (
+				60717F1B21F72FC500B9B3FE /* haarcascade_eye_tree_eyeglasses.xml */,
+				60717F1F21F72FC500B9B3FE /* haarcascade_eye.xml */,
+				60717F1921F72FC500B9B3FE /* haarcascade_frontalcatface_extended.xml */,
+				60717F1D21F72FC500B9B3FE /* haarcascade_frontalcatface.xml */,
+				60717F1A21F72FC500B9B3FE /* haarcascade_frontalface_alt_tree.xml */,
+				60717F1021F72FC400B9B3FE /* haarcascade_frontalface_alt.xml */,
+				60717F1321F72FC400B9B3FE /* haarcascade_frontalface_alt2.xml */,
+				60717F1821F72FC500B9B3FE /* haarcascade_frontalface_default.xml */,
+				60717F1721F72FC500B9B3FE /* haarcascade_fullbody.xml */,
+				60717F0F21F72FC400B9B3FE /* haarcascade_lefteye_2splits.xml */,
+				60717F1121F72FC400B9B3FE /* haarcascade_licence_plate_rus_16stages.xml */,
+				60717F1221F72FC400B9B3FE /* haarcascade_lowerbody.xml */,
+				60717F1C21F72FC500B9B3FE /* haarcascade_profileface.xml */,
+				60717F1521F72FC500B9B3FE /* haarcascade_righteye_2splits.xml */,
+				60717F1621F72FC500B9B3FE /* haarcascade_russian_plate_number.xml */,
+				60717F1421F72FC400B9B3FE /* haarcascade_smile.xml */,
+				60717F1E21F72FC500B9B3FE /* haarcascade_upperbody.xml */,
+			);
+			path = Haarcascades;
+			sourceTree = "<group>";
+		};
+		608B480D21EF523A00D165CB = {
+			isa = PBXGroup;
+			children = (
+				608B481821EF523A00D165CB /* DetectionApp */,
+				608B482B21EF526800D165CB /* Frameworks */,
+				608B481721EF523A00D165CB /* Products */,
+				7C52CE7EAC27A5A628EE0793 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		608B481721EF523A00D165CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				608B481621EF523A00D165CB /* DetectionApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		608B481821EF523A00D165CB /* DetectionApp */ = {
+			isa = PBXGroup;
+			children = (
+				608B483921EF539800D165CB /* OpenCVWrappers */,
+				60E2A43A23731B10002AAE5A /* Resources */,
+				2C5E10C5225B84420088FC4A /* CollectioViewCells */,
+				608B481921EF523A00D165CB /* AppDelegate.swift */,
+				2C1BA91D2241068900183C77 /* CameraViewController.swift */,
+				608B481D21EF523A00D165CB /* Main.storyboard */,
+			);
+			path = DetectionApp;
+			sourceTree = "<group>";
+		};
+		608B482B21EF526800D165CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC8125D287D466B69D1E09CA /* Pods_DetectionApp.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		608B483921EF539800D165CB /* OpenCVWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				60717EF921F7227800B9B3FE /* Haarcascades */,
+				608B483C21EF557600D165CB /* UIImage+OpenCV.h */,
+				608B483B21EF557600D165CB /* UIImage+OpenCV.mm */,
+				2C65C11A2243EFEF00E290B5 /* UIImage+Color.h */,
+				2C65C11B2243EFEF00E290B5 /* UIImage+Color.m */,
+				6044086A2214223500099F92 /* BodyObject.h */,
+				6044086B2214223500099F92 /* BodyObject.m */,
+				60B1321921F0E5FA00F99AB8 /* BodyDetector.h */,
+				60B1321A21F0E5FA00F99AB8 /* BodyDetector.mm */,
+				2C6A34F0224CD21900E53B8F /* ObjectDetector.h */,
+				2C6A34F1224CD21900E53B8F /* ObjectDetector.mm */,
+				608B483F21EF55A500D165CB /* OpenCVDetector.h */,
+				608B483E21EF55A500D165CB /* OpenCVDetector.mm */,
+			);
+			path = OpenCVWrappers;
+			sourceTree = "<group>";
+		};
+		60E2A43A23731B10002AAE5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				608B482F21EF530A00D165CB /* DetectionApp-Bridging-Header.h */,
+				608B482E21EF527800D165CB /* PrefixHeader.pch */,
+				608B482021EF523B00D165CB /* Asset.xcassets */,
+				608B482221EF523B00D165CB /* LaunchScreen.storyboard */,
+				608B482521EF523B00D165CB /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C52CE7EAC27A5A628EE0793 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4AAC03BAE3450A0ECD6A6E94 /* Pods-DetectionApp.debug.xcconfig */,
+				B41677230514792ADD42395E /* Pods-DetectionApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		608B481521EF523A00D165CB /* DetectionApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 608B482821EF523B00D165CB /* Build configuration list for PBXNativeTarget "DetectionApp" */;
+			buildPhases = (
+				0FFBE26BAAF8132319CCE187 /* [CP] Check Pods Manifest.lock */,
+				608B481221EF523A00D165CB /* Sources */,
+				608B481321EF523A00D165CB /* Frameworks */,
+				608B481421EF523A00D165CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DetectionApp;
+			productName = DetectionApp;
+			productReference = 608B481621EF523A00D165CB /* DetectionApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		608B480E21EF523A00D165CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Anton Bal'";
+				TargetAttributes = {
+					608B481521EF523A00D165CB = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 608B481121EF523A00D165CB /* Build configuration list for PBXProject "DetectionApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 608B480D21EF523A00D165CB;
+			productRefGroup = 608B481721EF523A00D165CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				608B481521EF523A00D165CB /* DetectionApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		608B481421EF523A00D165CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60717F2A21F72FC500B9B3FE /* haarcascade_frontalcatface_extended.xml in Resources */,
+				60717F2321F72FC500B9B3FE /* haarcascade_lowerbody.xml in Resources */,
+				60717F2121F72FC500B9B3FE /* haarcascade_frontalface_alt.xml in Resources */,
+				60717F2B21F72FC500B9B3FE /* haarcascade_frontalface_alt_tree.xml in Resources */,
+				60717F2D21F72FC500B9B3FE /* haarcascade_profileface.xml in Resources */,
+				60717F2921F72FC500B9B3FE /* haarcascade_frontalface_default.xml in Resources */,
+				60717F2621F72FC500B9B3FE /* haarcascade_righteye_2splits.xml in Resources */,
+				60717F2421F72FC500B9B3FE /* haarcascade_frontalface_alt2.xml in Resources */,
+				60717F3021F72FC500B9B3FE /* haarcascade_eye.xml in Resources */,
+				608B482421EF523B00D165CB /* LaunchScreen.storyboard in Resources */,
+				60717F2E21F72FC500B9B3FE /* haarcascade_frontalcatface.xml in Resources */,
+				60717F2721F72FC500B9B3FE /* haarcascade_russian_plate_number.xml in Resources */,
+				60717F2221F72FC500B9B3FE /* haarcascade_licence_plate_rus_16stages.xml in Resources */,
+				602CE77F2333846300C39930 /* ColorCollectionViewCell.xib in Resources */,
+				608B482121EF523B00D165CB /* Asset.xcassets in Resources */,
+				60717F2F21F72FC500B9B3FE /* haarcascade_upperbody.xml in Resources */,
+				608B481F21EF523A00D165CB /* Main.storyboard in Resources */,
+				60717F2021F72FC500B9B3FE /* haarcascade_lefteye_2splits.xml in Resources */,
+				60717F2521F72FC500B9B3FE /* haarcascade_smile.xml in Resources */,
+				60717F2821F72FC500B9B3FE /* haarcascade_fullbody.xml in Resources */,
+				60717F2C21F72FC500B9B3FE /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FFBE26BAAF8132319CCE187 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DetectionApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		608B481221EF523A00D165CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				602CE77E2333846300C39930 /* ColorCollectionViewCell.swift in Sources */,
+				608B483D21EF557600D165CB /* UIImage+OpenCV.mm in Sources */,
+				60B1321B21F0E5FA00F99AB8 /* BodyDetector.mm in Sources */,
+				608B484021EF55A500D165CB /* OpenCVDetector.mm in Sources */,
+				2C6A34F2224CD21900E53B8F /* ObjectDetector.mm in Sources */,
+				2C1BA91E2241068900183C77 /* CameraViewController.swift in Sources */,
+				2C65C11C2243EFEF00E290B5 /* UIImage+Color.m in Sources */,
+				6044086C2214223500099F92 /* BodyObject.m in Sources */,
+				608B481A21EF523A00D165CB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		608B481D21EF523A00D165CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				608B481E21EF523A00D165CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		608B482221EF523B00D165CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				608B482321EF523B00D165CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		608B482621EF523B00D165CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		608B482721EF523B00D165CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		608B482921EF523B00D165CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AAC03BAE3450A0ECD6A6E94 /* Pods-DetectionApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2PXK66RX4R;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DetectionApp/Resources/PrefixHeader.pch";
+				INFOPLIST_FILE = DetectionApp/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Cleveroad.DetectionApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DetectionApp/Resources/DetectionApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		608B482A21EF523B00D165CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B41677230514792ADD42395E /* Pods-DetectionApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2PXK66RX4R;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DetectionApp/Resources/PrefixHeader.pch";
+				INFOPLIST_FILE = DetectionApp/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Cleveroad.DetectionApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DetectionApp/Resources/DetectionApp-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		608B481121EF523A00D165CB /* Build configuration list for PBXProject "DetectionApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				608B482621EF523B00D165CB /* Debug */,
+				608B482721EF523B00D165CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		608B482821EF523B00D165CB /* Build configuration list for PBXNativeTarget "DetectionApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				608B482921EF523B00D165CB /* Debug */,
+				608B482A21EF523B00D165CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 608B480E21EF523A00D165CB /* Project object */;
+}

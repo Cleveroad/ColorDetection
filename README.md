@@ -1,5 +1,5 @@
 # ColorDetection [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) <img src="https://camo.githubusercontent.com/bc4203245569bb38139fa6dd589022ed482f7356/68747470733a2f2f7777772e636c657665726f61642e636f6d2f7075626c69632f636f6d65726369616c2f6c6162656c2d696f732e737667" height="19"> <a href="https://www.cleveroad.com/?utm_source=github&utm_medium=label&utm_campaign=contacts"><img src="https://www.cleveroad.com/public/comercial/label-cleveroad.svg" height="19"></a>
-![Header image](/images/header.png)
+![Header image](https://raw.githubusercontent.com/Cleveroad/ColorDetection/master/header.png)
 [VIDEO RESULT](https://www.youtube.com/watch?v=MkP-8zGo0jw&list=PL6te5SaDLliRwzD_sf3o8mWxMIaDucACG)
 
 ## How to use OpenCV for iOS Mobile App.

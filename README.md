@@ -3,6 +3,7 @@
 [VIDEO RESULT](https://www.youtube.com/watch?v=MkP-8zGo0jw&list=PL6te5SaDLliRwzD_sf3o8mWxMIaDucACG)
 ## Meet ColorDetection by Cleveroad
 
+![Demo image](https://github.com/Cleveroad/ColorDetection/blob/master/gif2.gif?raw=true)
 ## How to use OpenCV for iOS Mobile App.
 
 Getting Started with the OpenCV SDK

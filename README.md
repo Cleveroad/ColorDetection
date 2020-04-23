@@ -3,7 +3,13 @@
 [VIDEO RESULT](https://www.youtube.com/watch?v=MkP-8zGo0jw&list=PL6te5SaDLliRwzD_sf3o8mWxMIaDucACG)
 ## Meet ColorDetection by Cleveroad
 
-![Demo image](https://github.com/Cleveroad/ColorDetection/blob/master/gif2.gif?raw=true)
+Check out our recent open-source application powered with computer vision. It’s built with Swift and OpenCV  and is capable of detecting and changing colors of objects via a camera of an iOS device.
+
+You can try the functionality of the application right on your devices! Go to this link to download our application from <a target="_blank"  href="https://apps.apple.com/us/app/colordetectioncr/id1508298229?ls=1">App Store</a>.
+
+[![Awesome](https://srv2.imgonline.com.ua/result_img/imgonline-com-ua-Resize-Be4vIpIX2sWP3e8h.jpg)](https://apps.apple.com/us/app/colordetectioncr/id1508298229?ls=1)
+[![Awesome](https://raw.githubusercontent.com/Cleveroad/ARFaceDetection/master/images/logo-footer_.png)](https://www.cleveroad.com/?utm_source=github&utm_medium=label&utm_campaign=contacts)
+<br/>
 ## How to use OpenCV for iOS Mobile App.
 
 Getting Started with the OpenCV SDK

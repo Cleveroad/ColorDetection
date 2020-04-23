@@ -5,6 +5,8 @@
 
 Check out our recent open-source application powered with computer vision. It’s built with Swift and OpenCV  and is capable of detecting and changing colors of objects via a camera of an iOS device.
 
+![Demo image](https://github.com/Cleveroad/ColorDetection/blob/master/gif2.gif)
+
 You can try the functionality of the application right on your devices! Go to this link to download our application from <a target="_blank"  href="https://apps.apple.com/us/app/colordetectioncr/id1508298229?ls=1">App Store</a>.
 
 [![Awesome](https://srv2.imgonline.com.ua/result_img/imgonline-com-ua-Resize-Be4vIpIX2sWP3e8h.jpg)](https://apps.apple.com/us/app/colordetectioncr/id1508298229?ls=1)
